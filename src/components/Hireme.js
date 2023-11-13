@@ -1,17 +1,21 @@
-import React from 'react'
-import { CircularMern } from './Icons'
-import Link from 'next/link'
+import React from "react";
+import { CircularMern } from "./Icons";
+import Link from "next/link";
 
 const Hireme = () => {
   return (
-    <div className='fixed left-4 bottom-4 flex items-center justify-center overflow-hidden'>
-    <div className='w-56 h-auto relative flex items-center justify-center'>
-        <CircularMern className={"fill-dark animate-spin-slow "}/>
-<Link href="mailto:mdtarikhan007@gmail.com" className='absolute flex items-center justify-center bg-dark text-light border-2 border-solid border-dark left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full w-20 h-20 shadow-md font-semibold hover:bg-light hover:text-dark'>Hire Me</Link>
+    <div className="absolute flex items-center justify-center overflow-hidden right-[-10px] left-auto top-[-10px] bottom-auto md:fixed  md:left-4 md:bottom-4">
+      <div className="w-[115px] h-auto relative flex items-center justify-center md:w-56">
+        <CircularMern className={"fill-dark animate-spin-slow "} />
+        <Link
+          href="mailto:mdtarikhan007@gmail.com"
+          className="absolute flex items-center text-[10px] justify-center bg-dark text-light border-2 border-solid border-dark left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full w-12 h-12 shadow-md font-semibold hover:bg-light hover:text-dark md:w-20 md:h-20 md:text-base"
+        >
+          Hire Me
+        </Link>
+      </div>
     </div>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Hireme
+export default Hireme;

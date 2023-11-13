@@ -4,7 +4,7 @@ import React from "react";
 const Skill = ({ name, x, y }) => {
   return (
     <motion.div
-      className=" absolute flex items-center justify-center bg-dark rounded-full font-semibold text-light shadow-dark cursor-pointer py-3 px-6"
+      className=" absolute text-sm flex items-center justify-center bg-dark rounded-full font-semibold text-light shadow-dark cursor-pointer lg:py-3 lg:px-6 md:px-2 md:py-4 py-1.5 px-3 "
       whileHover={{ scale: 1.05 }}
       initial={{ x: 0, y: 0 }}
       whileInView={{ x: x, y: y }}
@@ -18,10 +18,12 @@ const Skill = ({ name, x, y }) => {
 const Skills = () => {
   return (
     <>
-      <h2 className="font-bold w-full text-center text-8xl mt-64">Skills</h2>
-      <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight">
+      <h2 className="font-bold w-full text-center text-6xl mt-32 md:text-8xl md:mt-64 mb-9 md:mb-16 lg:mb-24 ">
+        Skills
+      </h2>
+      <div className="w-full h-[50vh] relative flex items-center mb-32 md:mb-64 justify-center rounded-full bg-circularLightSm sm:bg-circularLightMd md:bg-circularLightLg  xs:h-[60vh] md:h-[80vh] lg:h-screen">
         <motion.div
-          className="flex items-center justify-center bg-dark rounded-full font-semibold text-light p-8 shadow-dark cursor-pointer"
+          className="flex p-2 items-center justify-center bg-dark rounded-full font-semibold text-light lg:p-8 shadow-dark cursor-pointer sm:p-4 md:p-6"
           whileHover={{ scale: 1.05 }}
         >
           Web
@@ -34,7 +36,7 @@ const Skills = () => {
         <Skill name="Javascript" x="15vw" y="-12vw" />
         <Skill name="Python" x="32vw" y="-5vw" />
         <Skill name="HTML" x="0vw" y="-20vw" />
-        <Skill name="Redux Toolkit" x="-25vw" y="18vw" />
+        <Skill name="Typescript" x="-25vw" y="18vw" />
         <Skill name="Tailwind CSS" x="18vw" y="18vw" />
       </div>
     </>

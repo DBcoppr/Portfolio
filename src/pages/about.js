@@ -44,9 +44,12 @@ const about = () => {
       <Pagetransition />
       <main className="flex w-full items-center justify-center">
         <Layout className="pt-16">
-          <AnimatedText text="Passion Fuels Growth" className="mb-16" />
-          <div className="grid w-full grid-cols-8 gap-16">
-            <div className="col-span-3 flex flex-col items-start justify-start">
+          <AnimatedText
+            text="Passion Fuels Growth"
+            className=" !text-4xl mb-8 md:!text-7xl lg:!text-8xl sm:mb-16 !leading-tight"
+          />
+          <div className="grid w-full grid-cols-8  gap-8 sm:gap-16">
+            <div className="md:col-span-3 flex flex-col items-start justify-start order-2 col-span-8">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
                 About me
               </h2>
@@ -72,35 +75,37 @@ const about = () => {
                 applications.
               </p>
             </div>
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8">
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark"></div>
+            <div className=" relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 col-span-8  order-1 md:col-span-3 md:order-2">
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark "></div>
               <Image
                 src={Profilepic}
                 alt="profie pic"
                 className="w-full h-auto rounded-2xl"
+                priority
+                sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw , 33vw"
               ></Image>
             </div>
 
-            <div className="col-span-2 flex flex-col items-end justify-evenly">
+            <div className="col-span-8 flex flex-row items-end justify-evenly md:col-span-2 lg:items-center order-3 md:flex-col">
               {/* <div className='flex flex-col items-end justify-center '>
                                 <span className='inline-block text-7xl font-bold'>
                                     +50
                                 </span>
                                 <h2 className='text-xl font-medium capitalize text-dark/75'>satified clients</h2>
                             </div> */}
-              <div className="flex flex-col items-end justify-center ">
-                <span className="inline-block text-7xl font-bold">
+              <div className="flex flex-col items-center justify-center md:items-end  ">
+                <span className="inline-block text-4xl font-bold xs:text-5xl sm:text-6xl md:text-7xl ">
                   <AnimatedNumbers value={8} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-sm font-medium capitalize text-dark/75 xs:text-base sm:text-lg md:text-xl ">
                   projects completed
                 </h2>
               </div>
-              <div className="flex flex-col items-end justify-center ">
-                <span className="inline-block text-7xl font-bold">
+              <div className="flex flex-col items-center justify-center md:items-end  ">
+                <span className="inline-block text-4xl font-bold xs:text-5xl sm:text-6xl md:text-7xl ">
                   <AnimatedNumbers value={7} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-sm font-medium capitalize text-dark/75 xs:text-base sm:text-lg md:text-xl ">
                   months of experience
                 </h2>
               </div>

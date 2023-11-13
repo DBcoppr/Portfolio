@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
 
-const Layout = ({children,className=""}) => {
+const Layout = ({ children, className = "" }) => {
   return (
-    <div className={`w-full h-full inline-block z-0 bg-light p-32 ${className}`}>
-        {children}
+    <div
+      className={`w-full h-full inline-block z-0 bg-light lg:p-24 md:p-16 sm:p-12 p-8 ${className}`}
+    >
+      {children}
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
