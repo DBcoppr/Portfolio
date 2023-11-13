@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Hireme = () => {
   return (
-    <div className="absolute flex items-center justify-center overflow-hidden right-[-10px] left-auto top-[-10px] bottom-auto md:fixed  md:left-4 md:bottom-4">
+    <div className="absolute flex items-center justify-center overflow-hidden right-[-10px] top-[-10px]  md:fixed lg:right-[85%] lg:top-[65%] md:right-[70%] md:top-[65%]">
       <div className="w-[115px] h-auto relative flex items-center justify-center md:w-56">
         <CircularMern className={"fill-dark animate-spin-slow "} />
         <Link
