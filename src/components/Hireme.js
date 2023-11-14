@@ -8,7 +8,7 @@ const Hireme = () => {
       <div className="w-[115px] h-auto relative flex items-center justify-center md:w-56">
         <CircularMern className={"fill-dark animate-spin-slow "} />
         <Link
-          href="mailto:mdtarikhan007@gmail.com"
+          href="mailto:mdtarikh.k4@gmail.com"
           className="absolute flex items-center text-[10px] justify-center bg-dark text-light border-2 border-solid border-dark left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full w-12 h-12 shadow-md font-semibold hover:bg-light hover:text-dark md:w-20 md:h-20 md:text-base"
         >
           Hire Me

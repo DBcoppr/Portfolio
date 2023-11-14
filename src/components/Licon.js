@@ -9,7 +9,7 @@ const Licon = ({ reference }) => {
   return (
     <figure className="absolute left-0 stroke-dark">
       <svg
-        className="-rotate-90 h-[40px] w-[40px] xs:h-[60px] xs:w-[60px]"
+        className="-rotate-90 h-[40px] w-[40px] sm:h-[60px] sm:w-[60px]"
         width="75"
         height="75"
         viewBox="0 0 100 100"

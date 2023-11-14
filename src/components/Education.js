@@ -7,7 +7,7 @@ const Details = ({ type, time, address, info }) => {
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[80%] md:w-[60%] mx-auto flex flex-col items-center justify-between"
+      className="my-8 first:mt-0 last:mb-0 w-[80%] md:w-[60%] mx-auto flex flex-col items-start justify-between"
     >
       <Licon reference={ref} />
       <motion.div
@@ -42,7 +42,7 @@ const Education = () => {
       <div ref={ref} className="w-full md:w-[75%] mx-auto relative ">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-[20px] xs:left-[30px]  xs:w-[2px] md:[w-px] md:left-9 top-0 h-full w-[4px]  bg-dark origin-top "
+          className="absolute left-[20px] xs:left-[30px]  xs:w-[2px] md:left-7 top-0 h-full w-[4px]  bg-dark origin-top "
         />
         <ul className="w-full flex flex-col items-start justify-between  ml-2 xs:ml-4">
           <Details
