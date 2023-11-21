@@ -54,6 +54,17 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between  ml-2 xs:ml-4">
           <Details
+            position="Project Engineer Trainee"
+            company="Wipro"
+            companyLink="https://olympus1.mygreatlearning.com/certificate/BEQNCZHC"
+            time="May”22 – Aug”22"
+            address="Remote"
+            work="Developed API integration feature which enabled client to
+            seamlessly integrate their custom variables via an API into the credit
+            decision-making process.Also,built dashboard for alert system, empowering clients to customize
+            timely event alerts"
+          ></Details>
+          <Details
             position="Web Development Intern"
             company="Instamedz"
             companyLink="https://instamedz.com"
@@ -62,15 +73,6 @@ const Experience = () => {
             work="Increased website traffic by 60% and improved user experience by collaborating with the UI/UX team to redesign the company website from scratch and made it mobile-responsive also.
                 Designed, developed, and integrated API with Database using Expressjs, Nodejs, and MongoDB.
                 Incorporated website with admin features like doctor onboarding and adding blog posts. 
-                "
-          ></Details>
-          <Details
-            position="Project Engineer Trainee"
-            company="Wipro"
-            companyLink="https://olympus1.mygreatlearning.com/certificate/BEQNCZHC"
-            time="May”22 – Aug”22"
-            address="Remote"
-            work="Under the Wipro Turbo training program I have been trained with the latest tech and worked on industry-level projects like an E-Commerce website, library management software, one-one chat using socket.io.
                 "
           ></Details>
         </ul>
