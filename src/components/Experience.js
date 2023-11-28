@@ -54,11 +54,11 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between  ml-2 xs:ml-4">
           <Details
-            position="Project Engineer Trainee"
-            company="Wipro"
-            companyLink="https://olympus1.mygreatlearning.com/certificate/BEQNCZHC"
-            time="May”22 – Aug”22"
-            address="Remote"
+            position="Frontend Developer Intern"
+            company="Finbox"
+            companyLink="https://finbox.in/"
+            time="Jun”23 – Nov”23"
+            address="Bangalore, Karnataka"
             work="Developed API integration feature which enabled client to
             seamlessly integrate their custom variables via an API into the credit
             decision-making process.Also,built dashboard for alert system, empowering clients to customize
