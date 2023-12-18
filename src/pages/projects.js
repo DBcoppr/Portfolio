@@ -8,6 +8,7 @@ import React from "react";
 import Projectimg from "../../public/images/projects/instamedz_img.png";
 import freelflyimg from "../../public/images/projects/freeflywings_img.png";
 import ecom from "../../public/images/projects/ecom.png";
+import housing from "../../public/images/projects/housing.png";
 import stackoverflow from "../../public/images/projects/stackoverflow.png";
 import stock from "../../public/images/projects/stock.png";
 import Pagetransition from "@/components/Pagetransition";
@@ -69,6 +70,17 @@ const projects = () => {
                 img={freelflyimg}
                 summary="Freeflywings provides assistance to businesses in establishing an online presence by offering services such as website/app development and marketing support. I am responsible building this website from scratch along with UI/UX developer. Tech used-Reactjs"
               ></Projtype1>
+            </div>
+            <div className="col-span-4">
+              <Projtype1
+                link="https://github.com/DBcoppr/Housing"
+                gitlink="https://github.com/DBcoppr/Housing"
+                title="Real Estate"
+                type="Personal Project"
+                img={housing}
+                summary="Created a platform where estate owner can publish their assets for sale. Having features like JWT and OAuth based authentication using firebase, state mangement with redux toolkit
+                Implement Firebase Storage for seamless image uploading within the platform."
+              />
             </div>
             <div className="col-span-4">
               <Projtype1
